@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap Css link -->
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+
+    <!-- style CSS link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="container bg-white p-5 my-5" style="border-radius: 20px;">
+
+            <form>
+
+                <div class="form-group my-5">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Enter Name" id="nameInput">
+                    <span class="fromValidation" id="namevalidation">Please Enter Your Name!</span>
+                </div>
+
+                <div class="form-group mb-5">
+                    <label>Email</label>
+                    <input type="email" class="form-control" placeholder="Enter Email" id="emailinput">
+                    <span class="fromValidation" id="emailvalidation">Please Enter Your Email!</span>
+
+                </div>
+
+                <div class="form-group mb-5">
+                    <label>Password:</label>
+                    <input type="password" class="form-control" placeholder="Enter password" id="passwordinput">
+                    <span class="fromValidation" id="passwordvalidation"></span>
+
+                </div>
+
+                <div class="form-group mb-5">
+                    <label>Address</label>
+                    <textarea class="form-control" placeholder="Enter your address" id="addressinput"></textarea>
+                    <span class="fromValidation" id="addressvalidation">Please Enter Your Address!</span>
+                </div>
+
+                <div class="form-group mb-5">
+                    <label class="d-block">Choose your sport</label>
+
+                    <input class="form-check-input me-2" type="checkbox" name="chk_valid"> Cricket <br>
+
+                    <input class="form-check-input me-2" type="checkbox" name="chk_valid"> Football <br>
+
+                    <input class="form-check-input me-2" type="checkbox" name="chk_valid"> Baseball <br>
+
+                    <span class="fromValidation" id="sportvalidation">Please choose your sport!</span>
+                </div>
+
+
+                <div class="form-group mb-5">
+                    <label class="d-block">Choose your Gender</label>
+
+                    <input type="radio" value="male" name="gender" class="me-2">
+                    <label for="male">Male</label><br>
+
+                    <input type="radio" value="female" name="gender" class="me-2">
+                    <label for="female">Female</label><br>
+
+                    <input type="radio" value="notGender" name="gender" class="me-2">
+                    <label for="notGender">Prefer not to say</label><br>
+
+                    <span class="fromValidation" id="gendervalidation">Please choose your gender!</span>
+
+                </div>
+
+                <div class="form-group mb-5">
+                    <label>Select your country</label>
+
+                    <select id="slc" class="form-control">
+                        <option value="" selected disabled>Pls select country</option>
+                        <option value="india" name="country">India</option>
+                        <option value="pakistan" name="country">Pakistan</option>
+                        <option value="uae" name="country">UAE</option>
+
+                    </select>
+
+                    <span class="fromValidation" id="countryvalidation">Please select your country!</span>
+
+
+                </div>
+
+                <div class="buttons mb-5 pt-5  d-flex justify-content-between">
+                    <button type="submit" class="btn btn-outline-primary">Reset</button>
+
+                    <button type="button" class="btn btn-primary" onclick="handleValidation()">Save</button>
+                </div>
+
+
+
+
+            </form>
+
+        </div>
+
+        <div class="container bg-white p-3 my-5" style="border-radius: 20px">
+            <h1 class="text-center p-5" id="noUser">NO USER ADDED</h1>
+            <table id="valuetable">
+              <thead class="justify-content-between">
+                <th class="pe-5">Name</th>
+                <th class="pe-5">Email</th>
+                <th class="pe-5">Password</th>
+                <th class="pe-5">Address</th>
+                <th class="pe-5">Sport</th>
+                <th class="pe-5">Gender</th>
+                <th>Country</th>
+              </thead>
+              <tbody id="tBody">
+                <!-- <tr>
+                  <td>
+                    <span class="pushvalue" id="namevalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="emailvalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="passwordvalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="addressvalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="sportvalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="gendervalue"></span>
+                  </td>
+                  <td>
+                    <span class="pushvalue" id="countryvalue"></span>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </main>
+    
+
+    </main>
+
+
+    <!-- Bootstrap js Link -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/popper.min.js"></script>
+
+    <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>
